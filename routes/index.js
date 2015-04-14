@@ -90,7 +90,7 @@ router.post('/processURL', function(req, res) {
 					//res.location("urlList");
 					//res.redirect("urlList");
 					res.location("urlList");
-					res.redirect("url");
+					res.redirect("urlList");
 				 }
 			});
 		} else{
