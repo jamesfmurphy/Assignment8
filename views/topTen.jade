@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1
+    Top Ten Pairs
+  ol
+    each url, i in topTen
+      li
+        Long: a(href="#{topTen}")= url.longURL
+        br
+        Short: a(href="#{topTen}")= url.shortURL

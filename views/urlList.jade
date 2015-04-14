@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1
+     The Long and Short URL Pairs
+  ol
+    each url, i in urlList
+      li
+        Long: a(href="/hitCount" id=url.longURL)= url.longURL
+        br
+        Short: a(href="/hitCount" id=url.shortURL)= url.shortURL
+        br
+

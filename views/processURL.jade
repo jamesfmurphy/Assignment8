@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  form#formProcessURL(name="processURL", method="post", action="/processURL")
+    input#inputURL(type="text", placeholder="Enter URL", name="processURL")
+    button#btnSubmit(type="submit") submit
+
